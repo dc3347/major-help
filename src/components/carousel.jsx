@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+ 
+class DemoCarousel extends Component {
+    render() {
+        return (
+            <Carousel>
+                <div>
+                    <img src="https://cdn.dribbble.com/users/2440205/screenshots/6206157/concept___5_4x.png" />
+                    
+                </div>
+                <div>
+                    <img src="https://cdn.dribbble.com/users/2440205/screenshots/6206157/concept___5_4x.png" />
+                    
+                </div>
+                <div>
+                    <img src="https://cdn.dribbble.com/users/2440205/screenshots/6206157/concept___5_4x.png" />
+                    
+                </div>
+            </Carousel>
+        );
+    }
+}
+ 
+export default DemoCarousel;
