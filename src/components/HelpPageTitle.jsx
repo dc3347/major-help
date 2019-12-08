@@ -1,214 +1,60 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+const BigWrapper = styled.div`
+    background-color: white;
+`;
 const Container = styled.div`
-    height: 25px;
+    height: 150px;
     width: 100%;
     position: relative;
-    top: 460px;
-    left: 150px;
-    font-size: 27px;
-    font-weight: 900;
-    font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-    color: #707070;
+    top: 20px;
+    left: 50px;
+    font-size: 40px;
+    display: inline;
+    font-weight: bold;
+    font-family: "Helvetica Neue";
     text-align: left;
 `;
 
-const Wrapper = styled.div`
-    background-color: white;
-`;
-const Line = styled.div`
+const MajorTitle = styled.div`
+    height: 150px;
+    width: 100%;
     position: relative;
-    top: 475px;
-`;
-const TinyContainer = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 150px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle = styled.div`
-    margin-top: 500px;
-    margin-left: 250px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
+    top: 70px;
+    left: 650px;
+    font-size: 50px;
+    display: inline;
     font-weight: bold;
+    font-family: "HelveticaNeue-CondensedBold";
+    color: #707070;
 `;
 
-const TinyContainer2 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 450px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle2 = styled.div`
-    margin-top: -155px;
-    margin-left: 480px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
-    font-weight: bold;
+const Wrapper1 = styled.div`
+    color: #9EDEF7;
+    display: inline;
+    font-style: italic;
 `;
 
-const TinyContainer3 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 750px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle3 = styled.div`
-    margin-top: -155px;
-    margin-left: 780px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
+const Wrapper2 = styled.div`
     color: #707070;
-    font-weight: bold;
+    display: inline;
+    font-style: italic;
 `;
-
-const TinyContainer4 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 1050px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle4 = styled.div`
-    margin-top: -156px;
-    margin-left: 1090px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
-    font-weight: bold;
-`;
-
-const TinyContainer5 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 150px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle5 = styled.div`
-    margin-top: 50px;
-    margin-left: 177px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
-    font-weight: bold;
-`;
-
-const TinyContainer6 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 450px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle6 = styled.div`
-    margin-top: -155px;
-    margin-left: 500px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
-    font-weight: bold;
-`;
-
-const TinyContainer7 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 750px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle7 = styled.div`
-    margin-top: -155px;
-    margin-left: 770px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
-    font-weight: bold;
-`;
-
-const TinyContainer8 = styled.div`
-    height: 135px;
-    background-color: #F4F4F4;
-    opacity: 0.7;
-    width: 250px;
-    position: relative;
-    top: 10px;
-    margin-left: 1050px;
-    border-radius: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: "Helvetica Neue";
-`;
-const ContainerTitle8 = styled.div`
-    margin-top: -155px;
-    margin-left: 1110px;
-    font-size: 17px;
-    font-family: "Helvetica Neue";
-    color: #707070;
-    font-weight: bold;
-`;
-class SpecialProgramBar extends Component {
+class HelpPageTitle extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-        <Wrapper>
-        <h>MAJOR HELP</h>
-        </Wrapper>
+        <BigWrapper>
+        <Container>
+        <Wrapper1> MAJOR</Wrapper1> <Wrapper2>HELP</Wrapper2>
+        <MajorTitle>Computer Science</MajorTitle>
+        </Container></BigWrapper>
     );
   }
 }
 
-SpecialProgramBar.label = "SpecialProgramBar";
-export default SpecialProgramBar;
+HelpPageTitle.label = "HelpPageTitle";
+export default HelpPageTitle;
