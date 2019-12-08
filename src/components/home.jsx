@@ -56,7 +56,7 @@ const RightColumnWrapper = styled.div`
 `;
 
 const Title = styled.div`
-    background-color: blue;
+    background-color: #62A8E5;
     padding: 10px;
     border-radius: 10px;
     font-size: 16px;
@@ -77,6 +77,13 @@ const Image = styled.img`
     padding: 50px;
 `;
 
+const Link = styled.a`
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #62A8E5;
+`;
+
 const OpenHouseWrap = styled.div``;
 
 const DepartmentTitle = styled.div``;
@@ -84,75 +91,144 @@ const DepartmentTitle = styled.div``;
 class HomePage extends Component {
   constructor(props) {
     super(props);
+    this.state = { NavBarVisible: false };
+    this.toggleNavBar = this.toggleNavBar.bind(this);
+  }
+
+  toggleNavBar() {
+    this.setState({ NavBarVisible: !this.state.NavBarVisible });
   }
 
   render() {
-    return (
-        <div>
-            <NavBarWrapper>
-                <HamburgerMenu>
-                    <MenuBar></MenuBar>
-                    <MenuBar></MenuBar>
-                    <MenuBar></MenuBar>
-                </HamburgerMenu>
-                <MainText>MAJOR HELP</MainText>
-                <a href = "/CourseMain">Courses</a>
-            </NavBarWrapper>
-            <hr></hr>
-            <MainWrapper>
-                <LeftColumnWrapper>
-                    <Title>Declaration Dates</Title>
-                    <SchoolDate>Barnard 1/28/19</SchoolDate>
-                    <SchoolDate>CC 2/02/19</SchoolDate>
-                    <SchoolDate>GS 2/10/19</SchoolDate>
-                    <SchoolDate>SEAS 10/30/19</SchoolDate>
-                </LeftColumnWrapper>
-                <CenterColumnWrapper>
-                    <SectionWrap>
-                        <div><Image src = "https://www.cnascientific.com/wp-content/uploads/2017/10/STEM-logo.png"></Image>
-                        <Text></Text>
-                        </div>
-                        <div><Image src = "http://humanitiesinstitute.buffalo.edu/wp-content/uploads/sites/4/2017/11/H2R-logo-tan-web.png"></Image>
-                        <Text></Text>
-                        </div>
-                        <div>
-                        <Image src = "https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/hires_1.jpg?itok=KcjhaVdl"></Image>
-                        <Text></Text>
-                        </div>
-                        <div>
-                        <Image src = "http://www.newjerseystage.com/events2017/Art-Design.jpg"></Image>
-                        <Text></Text>
-                        </div>
-                    </SectionWrap>
-                    <SectionWrap>
-                        <Image></Image>
-                        <Text></Text>
-                    </SectionWrap>
-                    <SectionWrap>
-                        <Image></Image>
-                        <Text></Text>
-                    </SectionWrap>
-                    <SectionWrap>
-                        <Image></Image>
-                        <Text></Text>
-                    </SectionWrap>
-                </CenterColumnWrapper>
-                <RightColumnWrapper>
-                    <OpenHouseWrap>
-                        <DepartmentTitle>APMA</DepartmentTitle>
-                        11/14/14
-                        633 Mudd
-                        <DepartmentTitle>CS</DepartmentTitle>
-                        11/14/14
-                        633 Mudd
-                        <DepartmentTitle>MECHE</DepartmentTitle>
-                        11/14/14
-                        633 Mudd
-                    </OpenHouseWrap>
-                </RightColumnWrapper>
-            </MainWrapper>
-        </div>
-    );
+    if(this.state.NavBarVisible) {
+        return (
+            <div>
+                <NavBarWrapper>
+                    <HamburgerMenu onClick = {this.toggleNavBar}>
+                        <MenuBar></MenuBar>
+                        <MenuBar></MenuBar>
+                        <MenuBar></MenuBar>
+                    </HamburgerMenu>
+                    <MainText>MAJOR HELP</MainText>
+                </NavBarWrapper>
+                <hr></hr>
+                <MainWrapper>
+                    <LeftColumnWrapper>
+                        <Link href = "/CourseMain">Courses</Link>
+                    </LeftColumnWrapper>
+                    <CenterColumnWrapper>
+                        <SectionWrap>
+                            <div><Image src = "https://www.cnascientific.com/wp-content/uploads/2017/10/STEM-logo.png"></Image>
+                            <Text></Text>
+                            </div>
+                            <div><Image src = "http://humanitiesinstitute.buffalo.edu/wp-content/uploads/sites/4/2017/11/H2R-logo-tan-web.png"></Image>
+                            <Text></Text>
+                            </div>
+                            <div>
+                            <Image src = "https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/hires_1.jpg?itok=KcjhaVdl"></Image>
+                            <Text></Text>
+                            </div>
+                            <div>
+                            <Image src = "http://www.newjerseystage.com/events2017/Art-Design.jpg"></Image>
+                            <Text></Text>
+                            </div>
+                        </SectionWrap>
+                        <SectionWrap>
+                            <Image></Image>
+                            <Text></Text>
+                        </SectionWrap>
+                        <SectionWrap>
+                            <Image></Image>
+                            <Text></Text>
+                        </SectionWrap>
+                        <SectionWrap>
+                            <Image></Image>
+                            <Text></Text>
+                        </SectionWrap>
+                    </CenterColumnWrapper>
+                    <RightColumnWrapper>
+                        <OpenHouseWrap>
+                            <DepartmentTitle>APMA</DepartmentTitle>
+                            11/14/14
+                            633 Mudd
+                            <DepartmentTitle>CS</DepartmentTitle>
+                            11/14/14
+                            633 Mudd
+                            <DepartmentTitle>MECHE</DepartmentTitle>
+                            11/14/14
+                            633 Mudd
+                        </OpenHouseWrap>
+                    </RightColumnWrapper>
+                </MainWrapper>
+            </div>
+        );
+    } else {
+        return (
+            <div>
+                <NavBarWrapper>
+                    <HamburgerMenu onClick = {this.toggleNavBar}>
+                        <MenuBar></MenuBar>
+                        <MenuBar></MenuBar>
+                        <MenuBar></MenuBar>
+                    </HamburgerMenu>
+                    <MainText>MAJOR HELP</MainText>
+                </NavBarWrapper>
+                <hr></hr>
+                <MainWrapper>
+                    <LeftColumnWrapper>
+                        <Title>Declaration Dates</Title>
+                        <SchoolDate>Barnard 1/28/19</SchoolDate>
+                        <SchoolDate>CC 2/02/19</SchoolDate>
+                        <SchoolDate>GS 2/10/19</SchoolDate>
+                        <SchoolDate>SEAS 10/30/19</SchoolDate>
+                    </LeftColumnWrapper>
+                    <CenterColumnWrapper>
+                        <SectionWrap>
+                            <div><Image src = "https://www.cnascientific.com/wp-content/uploads/2017/10/STEM-logo.png"></Image>
+                            <Text></Text>
+                            </div>
+                            <div><Image src = "http://humanitiesinstitute.buffalo.edu/wp-content/uploads/sites/4/2017/11/H2R-logo-tan-web.png"></Image>
+                            <Text></Text>
+                            </div>
+                            <div>
+                            <Image src = "https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/hires_1.jpg?itok=KcjhaVdl"></Image>
+                            <Text></Text>
+                            </div>
+                            <div>
+                            <Image src = "http://www.newjerseystage.com/events2017/Art-Design.jpg"></Image>
+                            <Text></Text>
+                            </div>
+                        </SectionWrap>
+                        <SectionWrap>
+                            <Image></Image>
+                            <Text></Text>
+                        </SectionWrap>
+                        <SectionWrap>
+                            <Image></Image>
+                            <Text></Text>
+                        </SectionWrap>
+                        <SectionWrap>
+                            <Image></Image>
+                            <Text></Text>
+                        </SectionWrap>
+                    </CenterColumnWrapper>
+                    <RightColumnWrapper>
+                        <OpenHouseWrap>
+                            <DepartmentTitle>APMA</DepartmentTitle>
+                            11/14/14
+                            633 Mudd
+                            <DepartmentTitle>CS</DepartmentTitle>
+                            11/14/14
+                            633 Mudd
+                            <DepartmentTitle>MECHE</DepartmentTitle>
+                            11/14/14
+                            633 Mudd
+                        </OpenHouseWrap>
+                    </RightColumnWrapper>
+                </MainWrapper>
+            </div>
+        );
+    }
   }
 }
 
