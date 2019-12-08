@@ -96,6 +96,7 @@ class HomePage extends Component {
                     <MenuBar></MenuBar>
                 </HamburgerMenu>
                 <MainText>MAJOR HELP</MainText>
+                <a href = "/CourseMain">Courses</a>
             </NavBarWrapper>
             <hr></hr>
             <MainWrapper>
