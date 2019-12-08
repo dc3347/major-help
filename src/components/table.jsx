@@ -4,11 +4,13 @@ import styled from "styled-components";
 const WrapperRow = styled.div`
   display: flex;
   flex-direction: row
+  margin-right: 10px;
+  margin-left: 10px;
 `;
 
 const WrapperColumn = styled.div`
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 `;
 
 const CourseBubble = styled.div`
@@ -23,28 +25,31 @@ const CourseBubble = styled.div`
 `;
 
 const CourseTitle = styled.div`
-  font-size: 15px;
+  font-size: 20px;
   font-family: Helvetica Neue;
   font-style: bold;
-  color: Black;
+  color: #707070;
   text-align: center
   margin-top: 2px;
   margin-bottom: 2px;
 `;
 
 const SemesterTitle = styled.div`
-font-size: 20px;
+  font-family: Helvetica Neue;
+  font-style: condensed-bold;
+  font-size: 20px;
   width: 100%;
   height: 100%;
-  color: Black;
+  color: #707070;
   text-align: center
-  margin-top: 10px;
+  margin-top: 20px;
 `;
 
 const Line = styled.div`
   border-left: 1px solid Gray;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-right: 1px;
   bottom: 0;
 `;
 
@@ -54,12 +59,13 @@ const SemesterBox = styled.div`
   background-color: #ffffff;
   border-color: Gray;
   outline: 1px solid Gray;
+  margin-bottom: 6px;
 `;
 
 const CalBox = styled.div`
   width: 100%;
   height: 100%;
-  background-color: ##f4f4f4;
+  background-color: #f4f4f4;
 `;
 
 class Table extends React.Component {
@@ -79,7 +85,6 @@ class Table extends React.Component {
             <Line></Line>
             <SemesterTitle>2nd Spring </SemesterTitle>
           </WrapperRow>
-
           <WrapperRow>
           <SemesterBox> 
             <WrapperColumn>
