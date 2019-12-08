@@ -204,24 +204,7 @@ class SpecialProgramBar extends Component {
   render() {
     return (
         <Wrapper>
-        <Container>Special Programs</Container>
-        <Line> <hr /> </Line> 
-        <ContainerTitle> Minor </ContainerTitle>
-        <TinyContainer> <br></br> Seven classes needed: COMS W1004/07, COMS W3134/37, COMS W3157, COMS3203, COMS 3261, CSEE W3287, and APMA E2101/MATH UN2010/STAT GU4001.</TinyContainer>
-        <ContainerTitle2> Foundations of CS Track </ContainerTitle2>
-        <TinyContainer2> <br></br> Take this track if you're interested in algorithms and the theoretical aspects of Computer Science. Topics you might be studying include cryptography and optimization. </TinyContainer2>
-        <ContainerTitle3> Software Systems Track </ContainerTitle3>
-        <TinyContainer3> <br></br> Take this track if you're interested in software development and software systems technologies. Required classes are in programming languages, operating systems, and computer networks.  </TinyContainer3>
-        <ContainerTitle4> Digital Systems Track </ContainerTitle4>
-        <TinyContainer4> <br></br> Take this track if you're interested in both hardware and software. Classes you'll take include computer architecture, digital design, and embedded systems.  </TinyContainer4>
-        <ContainerTitle5> Intelligent Systems Track </ContainerTitle5>
-        <TinyContainer5> <br></br> Take this track if you're interested in machine learning, robotics, and, well, intelligent systems. Classes include AI, NLP, Machine Learning, and Computational Robotics. This is a particularly popular track. </TinyContainer5>
-        <ContainerTitle6> Applications Track </ContainerTitle6>
-        <TinyContainer6> <br></br> Take this track if you're interested in implementing interactive multimedia applications for the Internet and wireless networks. Classes include UI design and programming languages. </TinyContainer6>
-        <ContainerTitle7> Visions and Graphics Track </ContainerTitle7>
-        <TinyContainer7> <br></br> Take this track if you're interested in computer vision and graphics, robotics, and modeling. You'll take classes in, well, graphics and the likes of animation.</TinyContainer7>
-        <ContainerTitle8> Advanced Track </ContainerTitle8>
-        <TinyContainer8> <br></br> This is track is invite-only and meant for students who have already completed the CS core and the core for their track. It's an accelerated version of the other six tracks!</TinyContainer8>
+        <h>MAJOR HELP</h>
         </Wrapper>
     );
   }
