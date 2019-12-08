@@ -13,31 +13,41 @@ const WrapperColumn = styled.div`
   flex-direction: column;
 `;
 
+const WrapCourses = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;  
+
 const CourseBubble = styled.div`
   fixed-width: 100%;
   fixed-height: 100%;
   background-color: #9EDEF7;
   border-radius: 20px;
-  margin-right: 6px;
-  margin-left: 6px;
+  margin-right: 3px;
+  margin-left: 3px;
   margin-bottom: 4px;
   margin-top: 4px;
 `;
 
 const CourseTitle = styled.div`
-  font-size: 20px;
-  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
-  font-style: bold;
+  font-size: 15px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
   color: #707070;
   text-align: center
   margin-top: 2px;
   margin-bottom: 2px;
+  margin-right: 10px;
+  margin-left: 10px;
 `;
 
 const SemesterTitle = styled.div`
-  font-family: Helvetica Neue;
-  font-style: condensed-bold;
   font-size: 20px;
+  font-weight: 900;
+  font-family: Helvetica Neue, condensed;  
+  font-style: bold;
   width: 100%;
   height: 100%;
   color: #707070;
@@ -87,65 +97,53 @@ class Table extends React.Component {
           </WrapperRow>
           <WrapperRow>
           <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
  
             <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
             
             <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
 
             <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
             </WrapperRow>
           
@@ -161,71 +159,50 @@ class Table extends React.Component {
 
           <WrapperRow>
           <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
 
             <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
 
             <SemesterBox> 
-            <WrapperColumn>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
-              </CourseBubble>
-              </WrapperColumn>
+            <WrapCourses>
+              </WrapCourses>
             </SemesterBox>
 
             <SemesterBox> 
-            <WrapperColumn>
+            <WrapCourses>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>Hi</CourseTitle>
+                <CourseTitle>ECON 1105 Principles of Economics</CourseTitle>
               </CourseBubble>
-              </WrapperColumn>
+              </WrapCourses>
             </SemesterBox>
             </WrapperRow>
         </CalBox>
