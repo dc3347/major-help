@@ -1,20 +1,31 @@
 import React from "react";
 import styled from "styled-components";
 
-const WrapperSemBox = styled.div`
+const WrapperRow = styled.div`
   display: flex;
   flex-direction: row
 `;
 
+const WrapperColumn = styled.div`
+  display: flex;
+  flex-direction: column
+`;
+
 const CourseBubble = styled.div`
-  width: 95%px;
-  height: 20%px;
-  background-color: #9bddff;
+  fixed-width: 100%;
+  fixed-height: 100%;
+  background-color: #9EDEF7;
   border-radius: 20px;
+  margin-right: 6px;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  margin-top: 4px;
 `;
 
 const CourseTitle = styled.div`
   font-size: 15px;
+  font-family: Helvetica Neue;
+  font-style: bold;
   color: Black;
   text-align: center
   margin-top: 2px;
@@ -22,23 +33,33 @@ const CourseTitle = styled.div`
 `;
 
 const SemesterTitle = styled.div`
-  font-size: 15px;
+font-size: 20px;
+  width: 100%;
+  height: 100%;
   color: Black;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  text-align: center
+  margin-top: 10px;
+`;
+
+const Line = styled.div`
+  border-left: 1px solid Gray;
+  height: 30px;
+  margin-top: 10px;
+  bottom: 0;
 `;
 
 const SemesterBox = styled.div`
   width: 25%;
-  height: 40%;
+  fixed-height: 120%;
   background-color: #ffffff;
-  border-color: Black;
+  border-color: Gray;
+  outline: 1px solid Gray;
 `;
 
 const CalBox = styled.div`
-  width: 450;
-  height: 250;
-  background-color: #d3d3d3;
+  width: 100%;
+  height: 100%;
+  background-color: ##f4f4f4;
 `;
 
 class Table extends React.Component {
@@ -49,81 +70,159 @@ class Table extends React.Component {
   
       return (
         <CalBox>
-          <WrapperSemBox>
+          <WrapperRow>
+            <SemesterTitle>1st Fall</SemesterTitle> 
+            <Line></Line>
+            <SemesterTitle>1st Spring</SemesterTitle>
+            <Line></Line>
+            <SemesterTitle>2nd Fall </SemesterTitle>
+            <Line></Line>
+            <SemesterTitle>2nd Spring </SemesterTitle>
+          </WrapperRow>
+
+          <WrapperRow>
+          <SemesterBox> 
+            <WrapperColumn>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
+            </SemesterBox>
+ 
             <SemesterBox> 
+            <WrapperColumn>
               <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
+            </SemesterBox>
+            
+            <SemesterBox> 
+            <WrapperColumn>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
             </SemesterBox>
 
             <SemesterBox> 
+            <WrapperColumn>
               <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
             </SemesterBox>
-
-            <SemesterBox> 
-              <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
-              </CourseBubble>
-            </SemesterBox>
-
-            <SemesterBox> 
-              <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
-              </CourseBubble>
-              <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
-              </CourseBubble>
-            </SemesterBox>
-          </WrapperSemBox>
+            </WrapperRow>
           
-          <WrapperSemBox>
-            <SemesterBox> 
+            <WrapperRow>
+              <SemesterTitle>3rd Fall</SemesterTitle> 
+              <Line></Line>
+              <SemesterTitle>3rd Spring</SemesterTitle>
+              <Line></Line>
+              <SemesterTitle>4th Fall</SemesterTitle>
+              <Line></Line>
+              <SemesterTitle>4th Spring</SemesterTitle>
+            </WrapperRow>
+
+          <WrapperRow>
+          <SemesterBox> 
+            <WrapperColumn>
               <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
             </SemesterBox>
 
             <SemesterBox> 
+            <WrapperColumn>
               <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
             </SemesterBox>
 
             <SemesterBox> 
+            <WrapperColumn>
               <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
             </SemesterBox>
 
             <SemesterBox> 
+            <WrapperColumn>
               <CourseBubble>
-                <CourseTitle>1004: Intro Java</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
               <CourseBubble>
-                <CourseTitle>3137: AP</CourseTitle>
+                <CourseTitle>Hi</CourseTitle>
               </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              <CourseBubble>
+                <CourseTitle>Hi</CourseTitle>
+              </CourseBubble>
+              </WrapperColumn>
             </SemesterBox>
-          </WrapperSemBox>
+            </WrapperRow>
         </CalBox>
       );
 
