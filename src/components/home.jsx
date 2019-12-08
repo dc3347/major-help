@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 
 
 const NavBarWrapper = styled.div`
@@ -118,7 +119,7 @@ class HomePage extends Component {
                         <Text></Text>
                         </div>
                         <div>
-                        <Image src = "https://i.pinimg.com/originals/2a/c9/f8/2ac9f8db9f99822dbc7609c1b8bc2a69.png"></Image>
+                        <Image src = "http://www.newjerseystage.com/events2017/Art-Design.jpg"></Image>
                         <Text></Text>
                         </div>
                     </SectionWrap>
