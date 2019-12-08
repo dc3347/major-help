@@ -114,6 +114,8 @@ class HomePage extends Component {
                 <hr></hr>
                 <MainWrapper>
                     <LeftColumnWrapper>
+                        <Link href = "/App">Home</Link>
+                        <Link href = "/CourseMain">Courses</Link>
                         <Link href = "/CourseMain">Courses</Link>
                     </LeftColumnWrapper>
                     <CenterColumnWrapper>

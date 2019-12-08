@@ -1,9 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 import styled from "styled-components";
 
 const WrapperRow = styled.div`
   display: flex;
-  flex-direction: row
+  flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
 `;
@@ -21,8 +21,8 @@ const WrapCourses = styled.div`
 `;  
 
 const CourseBubble = styled.div`
-  fixed-width: 100%;
-  fixed-height: 100%;
+  width: 100%;
+  height: 100%;
   background-color: #9EDEF7;
   border-radius: 20px;
   margin-right: 3px;
@@ -36,7 +36,7 @@ const CourseTitle = styled.div`
   font-family: Helvetica Neue;
   font-weight: 900;
   color: #707070;
-  text-align: center
+  text-align: center;
   margin-top: 2px;
   margin-bottom: 2px;
   margin-right: 10px;
@@ -51,7 +51,7 @@ const SemesterTitle = styled.div`
   width: 100%;
   height: 100%;
   color: #707070;
-  text-align: center
+  text-align: center;
   margin-top: 20px;
 `;
 
@@ -65,7 +65,7 @@ const Line = styled.div`
 
 const SemesterBox = styled.div`
   width: 25%;
-  fixed-height: 120%;
+  height: 120%;
   background-color: #ffffff;
   border-color: Gray;
   outline: 1px solid Gray;
@@ -78,7 +78,7 @@ const CalBox = styled.div`
   background-color: #f4f4f4;
 `;
 
-class Table extends React.Component {
+class Table extends Component {
     render() {
       //var courseobj = new CourseTitle(this.props.coursetitle);
       //var options = { month: "short", day: "numeric" };
