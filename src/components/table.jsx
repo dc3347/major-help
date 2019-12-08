@@ -26,7 +26,7 @@ const CourseBubble = styled.div`
 
 const CourseTitle = styled.div`
   font-size: 20px;
-  font-family: Helvetica Neue;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
   font-style: bold;
   color: #707070;
   text-align: center
